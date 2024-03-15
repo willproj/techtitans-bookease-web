@@ -14,7 +14,7 @@ export default function DemoPageLayout() {
                 <Grid item xs={12}>
                     <Card sx={{ boxShadow: 5, borderRadius: 3 }}>
                         <ReactPlayer
-                            url='https://www.youtube.com/watch?v=LXb3EKWsInQ'
+                            url='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
                             width={'100%'}
                             height={'80vh'}
                         />
