@@ -20,6 +20,13 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import Link from 'next/link';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
+import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
+import SummarizeIcon from '@mui/icons-material/Summarize';
+import FeaturedPlayListIcon from '@mui/icons-material/FeaturedPlayList';
+import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
+import Diversity1Icon from '@mui/icons-material/Diversity1';
+
 
 const drawerWidth = 240;
 
@@ -71,21 +78,25 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 export default function AppSideBar({ children }) {
     const theme = useTheme();
     const [open, setOpen] = React.useState(true);
+    const [selectedPage, setSelectedPage] = React.useState('Introduction');
+
+    const handleClickItemButton = (page) => {
+        console.log(page);
+        setSelectedPage(page);
+    }
 
     const handleDrawerOpen = () => {
-        console.log("open")
         setOpen(true);
     };
 
     const handleDrawerClose = () => {
-        console.log("close")
         setOpen(false);
     };
 
     return (
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
-            <AppBar position="fixed" open={open}>
+            <AppBar position="fixed" open={open} sx={{ backgroundColor: '#A865C9', boxShadow: 5 }}>
                 <Toolbar>
                     <IconButton
                         color="inherit"
@@ -97,7 +108,7 @@ export default function AppSideBar({ children }) {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" noWrap component="div">
-                        BookEase
+                        <MenuBookIcon sx={{ mr: 2 }} /> BookEase
                     </Typography>
                 </Toolbar>
             </AppBar>
@@ -122,9 +133,14 @@ export default function AppSideBar({ children }) {
                 <Divider />
                 <Link href='/'>
                     <ListItem disablePadding>
-                        <ListItemButton>
+                        <ListItemButton
+                            onClick={() => handleClickItemButton('Introduction')}
+                            sx={{
+                                ...(selectedPage === 'Introduction' && { backgroundColor: '#D3BCE2' }) // Conditional styling
+                            }}
+                        >
                             <ListItemIcon>
-                                <InboxIcon />
+                                <LocalLibraryIcon />
                             </ListItemIcon>
                             <ListItemText primary={'Introduction'} />
                         </ListItemButton>
@@ -132,9 +148,14 @@ export default function AppSideBar({ children }) {
                 </Link>
                 <Link href='/vision'>
                     <ListItem disablePadding>
-                        <ListItemButton>
+                        <ListItemButton
+                            onClick={() => handleClickItemButton('Vision')}
+                            sx={{
+                                ...(selectedPage === 'Vision' && { backgroundColor: '#D3BCE2' }) // Conditional styling
+                            }}
+                        >
                             <ListItemIcon>
-                                <InboxIcon />
+                                <SummarizeIcon />
                             </ListItemIcon>
                             <ListItemText primary={'Vision Statement'} />
                         </ListItemButton>
@@ -142,9 +163,14 @@ export default function AppSideBar({ children }) {
                 </Link>
                 <Link href='/features'>
                     <ListItem disablePadding>
-                        <ListItemButton>
+                        <ListItemButton
+                            onClick={() => handleClickItemButton('Features')}
+                            sx={{
+                                ...(selectedPage === 'Features' && { backgroundColor: '#D3BCE2' }) // Conditional styling
+                            }}
+                        >
                             <ListItemIcon>
-                                <InboxIcon />
+                                <FeaturedPlayListIcon />
                             </ListItemIcon>
                             <ListItemText primary={'Features'} />
                         </ListItemButton>
@@ -152,20 +178,30 @@ export default function AppSideBar({ children }) {
                 </Link>
                 <Link href='demo'>
                     <ListItem disablePadding>
-                        <ListItemButton>
+                        <ListItemButton
+                            onClick={() => handleClickItemButton('Video')}
+                            sx={{
+                                ...(selectedPage === 'Video' && { backgroundColor: '#D3BCE2' }) // Conditional styling
+                            }}
+                        >
                             <ListItemIcon>
-                                <InboxIcon />
+                                <VideoLibraryIcon />
                             </ListItemIcon>
-                            <ListItemText primary={'Demo'} />
+                            <ListItemText primary={'App Video'} />
                         </ListItemButton>
                     </ListItem>
                 </Link>
                 <Divider />
                 <Link href='team'>
                     <ListItem disablePadding>
-                        <ListItemButton>
+                        <ListItemButton
+                            onClick={() => handleClickItemButton('Team')}
+                            sx={{
+                                ...(selectedPage === 'Team' && { backgroundColor: '#D3BCE2' }) // Conditional styling
+                            }}
+                        >
                             <ListItemIcon>
-                                <InboxIcon />
+                                <Diversity1Icon />
                             </ListItemIcon>
                             <ListItemText primary={'Team'} />
                         </ListItemButton>

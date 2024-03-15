@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useCallback } from 'react';
-import ReactFlow, { useNodesState, useEdgesState, addEdge, MiniMap, Controls } from 'reactflow';
+import ReactFlow, { useNodesState, useEdgesState, addEdge, MiniMap, Controls, MarkerType } from 'reactflow';
 import 'reactflow/dist/base.css'
 
 import CustomNode from './CustomNode';
@@ -50,22 +50,42 @@ const initEdges = [
         id: 'e1-2',
         source: '1',
         target: '2',
+        animated: true,
+        style: {
+            strokeWidth: 2,
+            stroke: '#00e676',
+        },
     },
     {
         id: 'e1-3',
         source: '1',
         target: '3',
+        animated: true,
+        style: {
+            strokeWidth: 2,
+            stroke: '#00e676',
+        },
     },
     {
         id: 'e1-4',
         source: '1',
         target: '4',
+        animated: true,
+        style: {
+            strokeWidth: 2,
+            stroke: '#00e676',
+        },
     },
-    
+
     {
         id: 'e1-5',
         source: '1',
         target: '5',
+        animated: true,
+        style: {
+            strokeWidth: 2,
+            stroke: '#00e676',
+        },
     },
 ];
 
