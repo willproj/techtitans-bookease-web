@@ -1,12 +1,11 @@
-'use client'
 import React, { memo } from 'react';
 import { Handle, Position } from 'reactflow';
 
 function CustomNode({ data }) {
   return (
-    <div className="px-4 py-2 bg-white border-2 rounded-md shadow-md border-stone-400">
+    <div className="px-4 py-2 shadow-md rounded-md bg-white border-2 border-stone-400">
       <div className="flex">
-        <div className="flex items-center justify-center w-12 h-12 bg-gray-100 rounded-full">
+        <div className="rounded-full w-12 h-12 flex justify-center items-center bg-gray-100">
           {data.emoji}
         </div>
         <div className="ml-2">
