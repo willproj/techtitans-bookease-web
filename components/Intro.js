@@ -18,7 +18,7 @@ export default function Intro() {
                 <Grid item xs={6} sx={{ mt: 70 }}>
                     <Button variant='outlined' sx={{
                         color: 'white',
-                        borderColor: 'white', border: 3,
+                        borderColor: 'white', border: 1,
                         height: 70,
                     }}>
                         <Typography variant='h5' sx={{
