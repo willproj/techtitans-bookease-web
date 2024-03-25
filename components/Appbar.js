@@ -30,9 +30,9 @@ function Navbar() {
 
     return (
         <AppBar position="fixed" style={{
-            backgroundColor: isScrolled ? '#7e57c2' : 'transparent', // Change color based on isScrolled
-            transition: 'background-color 0.3s', // Smooth transition for color change
-            boxShadow: 'none', // Remove shadow from AppBar
+            backgroundColor: isScrolled ? '#7e57c2' : 'transparent', 
+            transition: 'background-color 0.3s', 
+            boxShadow: 'none', 
             width: '100%'
         }}>
             <Toolbar>

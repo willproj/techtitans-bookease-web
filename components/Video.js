@@ -10,7 +10,7 @@ export default function Video() {
     const [isMounted, setIsMounted] = React.useState(false);
 
     React.useEffect(() => {
-        setIsMounted(true); // Component is mounted, set the state to true
+        setIsMounted(true); 
     }, []);
 
     return (
