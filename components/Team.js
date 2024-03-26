@@ -19,10 +19,10 @@ const initNodes = [
             name: 'Arrayman Pol',
             job: <ul>
                 <p>Project Leader</p>
-                <li>backend design</li>
-                <li>backend design</li>
-                <li>backend design</li>
-                <li>backend design</li>
+                <li>3 tiered architecture design</li>
+                <li>Backend design</li>
+                <li>Database Implementation</li>
+                <li>System Tests</li>
             </ul>,
             emoji: '😎'
         },
@@ -34,14 +34,14 @@ const initNodes = [
         data: {
             name: 'Chang Geng', job: <ul>
                 <p>Developer</p>
-                <li>backend design</li>
-                <li>backend design</li>
-                <li>backend design</li>
-                <li>backend design</li>
+                <li>Android UI Development</li>
+                <li>Connecting a database an application</li>
+                <li>Documentation</li>
+                <li>Connect Presentation, Logic and Persistence</li>
             </ul>, emoji: '🤓'
         },
 
-        position: { x: -350, y: 300 },
+        position: { x: -650, y: 300 },
     },
     {
         id: '3',
@@ -49,13 +49,13 @@ const initNodes = [
         data: {
             name: 'Heet Patel', job: <ul>
                 <p>Developer</p>
-                <li>backend design</li>
-                <li>backend design</li>
-                <li>backend design</li>
-                <li>backend design</li>
+                <li>Android UI Development</li>
+                <li>Connecting a database an application</li>
+                <li>Integration Tests</li>
+                <li>Connect Presentation, Logic and Persistence</li>
             </ul>, emoji: '🤩'
         },
-        position: { x: -100, y: 300 },
+        position: { x: -200, y: 300 },
     },
     {
         id: '4',
@@ -63,13 +63,13 @@ const initNodes = [
         data: {
             name: 'Heping Dong', job: <ul>
                 <p>Developer</p>
-                <li>backend design</li>
-                <li>backend design</li>
-                <li>backend design</li>
-                <li>backend design</li>
+                <li>Unit Tests</li>
+                <li>Integration Tests</li>
+                <li>System Tests</li>
+                <li>Scheduling each iteration</li>
             </ul>, emoji: '🤩'
         },
-        position: { x: 150, y: 300 },
+        position: { x: 250, y: 300 },
     },
 
     {
@@ -78,13 +78,12 @@ const initNodes = [
         data: {
             name: 'Asif', job: <ul>
                 <p>Developer</p>
-                <li>backend design</li>
-                <li>backend design</li>
-                <li>backend design</li>
-                <li>backend design</li>
+                <li>Integration Tests</li>
+                <li>Backend Development</li>
+                <li>Documentation</li>
             </ul>, emoji: '🤩'
         },
-        position: { x: 400, y: 300 },
+        position: { x: 550, y: 300 },
     },
 ];
 
@@ -149,8 +148,8 @@ export default function Team() {
                     height: '100%',
                     mt: 6
                 }}>
-                    <Diversity3Icon sx={{ color: 'white', mr: 2, height: 35, width: 35 }} />
-                    <Typography variant='h4' sx={{ color: 'white' }}>
+                    <Diversity3Icon sx={{ color: '#757575', mr: 2, height: 35, width: 35 }} />
+                    <Typography variant='h4' sx={{ color: '#757575' }}>
                         Team
                     </Typography>
                 </Grid>

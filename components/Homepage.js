@@ -7,6 +7,7 @@ import VisionStatement from './VisionStatement';
 import Features from './Features';
 import Video from './Video';
 import Team from './Team';
+import Postmortem from './Postmortem';
 
 function Homepage() {
     return (
@@ -21,10 +22,13 @@ function Homepage() {
             <Box id="feature" sx={{ height: '100vh', backgroundColor: '#7e57c2' }}>
                 <Features />
             </Box>
-            <Box id="video" sx={{ height: '100vh' }}>
+            <Box id="postmortem" sx={{ height: '100vh' }}>
+                <Postmortem />
+            </Box>
+            <Box id="video" sx={{ height: '100vh', backgroundColor: '#7e57c2' }}>
                 <Video />
             </Box>
-            <Box id="team" sx={{ height: '100vh', backgroundColor: '#7e57c2' }}>
+            <Box id="team" sx={{ height: '100vh' }}>
                 <Team />
             </Box>
         </Box>

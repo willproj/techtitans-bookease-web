@@ -23,8 +23,8 @@ export default function Video() {
                     height: '100%',
                     mt: 6
                 }}>
-                    <PlayCircleIcon sx={{ color: '#757575', mr: 2, height: 35, width: 35 }} />
-                    <Typography variant='h4' sx={{ color: '#757575' }}>
+                    <PlayCircleIcon sx={{ color: 'white', mr: 2, height: 35, width: 35 }} />
+                    <Typography variant='h4' sx={{ color: 'white' }}>
                         Video
                     </Typography>
                 </Grid>

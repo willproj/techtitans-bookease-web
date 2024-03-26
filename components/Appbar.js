@@ -30,9 +30,9 @@ function Navbar() {
 
     return (
         <AppBar position="fixed" style={{
-            backgroundColor: isScrolled ? '#7e57c2' : 'transparent', 
-            transition: 'background-color 0.3s', 
-            boxShadow: 'none', 
+            backgroundColor: isScrolled ? '#7e57c2' : 'transparent',
+            transition: 'background-color 0.3s',
+            boxShadow: 'none',
             width: '100%'
         }}>
             <Toolbar>
@@ -49,6 +49,11 @@ function Navbar() {
                 <Button sx={{ color: 'white', mx: 2 }} onClick={() => scrollToSection('feature')}>
                     <Typography>
                         Features
+                    </Typography>
+                </Button>
+                <Button sx={{ color: 'white', mx: 2 }} onClick={() => scrollToSection('postmortem')}>
+                    <Typography>
+                        Postmortem
                     </Typography>
                 </Button>
                 <Button sx={{ color: 'white', mx: 2 }} onClick={() => scrollToSection('video')}>
