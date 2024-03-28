@@ -114,7 +114,6 @@ function BarChart() {
     return (
         <Chart options={chartData.options} series={chartData.series} type="bar" width="100%" height={400} />
     );
-
 }
 
 export default function Postmortem() {
@@ -193,11 +192,11 @@ export default function Postmortem() {
                             What went right in the development process?
                         </Typography>
                         <Typography variant='subtitle2' sx={{ color: '#757575' }}>
-                            Several aspects of the development process went smoothly and contributed to the success of the project. 
-                            Firstly, the creation of an architecture diagram proved to be highly beneficial, 
-                            as it provided a clear overview of the system's structure and facilitated the seamless addition of additional functionality. 
-                            Additionally, leveraging appropriate design patterns at specific instances significantly aided the development process across all three iterations, 
-                            ensuring code maintainability and scalability. The utilization of design patterns learned in class, particularly those promoting low coupling, 
+                            Several aspects of the development process went smoothly and contributed to the success of the project.
+                            Firstly, the creation of an architecture diagram proved to be highly beneficial,
+                            as it provided a clear overview of the system's structure and facilitated the seamless addition of additional functionality.
+                            Additionally, leveraging appropriate design patterns at specific instances significantly aided the development process across all three iterations,
+                            ensuring code maintainability and scalability. The utilization of design patterns learned in class, particularly those promoting low coupling,
                             enabled the easy incorporation of system tests during the third iteration,
                             enhancing the overall robustness and quality of the application.
                         </Typography>
