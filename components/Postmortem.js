@@ -1,8 +1,6 @@
 'use client'
 import * as React from 'react';
-import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import { Typography } from '@mui/material';
 import PsychologyIcon from '@mui/icons-material/Psychology';
@@ -122,7 +120,7 @@ function BarChart() {
 export default function Postmortem() {
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <Grid container spacing={6}>
+            <Grid container spacing={3}>
                 <Grid item xs={12} sx={{
                     display: 'flex',
                     justifyContent: 'center',
@@ -143,12 +141,12 @@ export default function Postmortem() {
                     </Box>
                 </Grid>
                 <Grid item xs={6}>
-                    <Box sx={{ ml: 10, mt: 3 }}>
+                    <Box sx={{ ml: 10, mt: 1 }}>
                         <BarChart />
                     </Box>
                 </Grid>
                 <Grid item xs={6}>
-                    <Box sx={{ mr: 10, mt: 3 }}>
+                    <Box sx={{ mr: 10, mt: 1 }}>
                         <PieChart />
                     </Box>
                 </Grid>
@@ -165,31 +163,43 @@ export default function Postmortem() {
                 </Grid>
                 <Grid item xs={12}>
                     <Box sx={{ mx: 10 }}>
-                        <Typography variant='h6'>
-                            title
+                        <Typography variant='h6' sx={{ color: '#757575' }}>
+                            What took the most time? The least? Any surprises?
                         </Typography>
-                        <Typography variant='subtitle2'>
-                            description
-                        </Typography>
-                    </Box>
-                </Grid>
-                <Grid item xs={12}>
-                    <Box sx={{ mx: 10 }}>
-                        <Typography variant='h6'>
-                            title
-                        </Typography>
-                        <Typography variant='subtitle2'>
-                            description
+                        <Typography variant='subtitle2' sx={{ color: '#757575' }}>
+                            Throughout the project, the most time-consuming task proved to be setting up the database,
+                            followed closely by refactoring the codebase and addressing existing technical debt.
+                            Surprisingly, the implementation of the favorite book feature took the least amount of time.
+                            However, a notable surprise emerged during development when an error was discovered in the database reading script provided in the sample project.
+                            Specifically, a fixed character array of size 1024 caused unexpected issues, leading to additional troubleshooting and debugging efforts.
                         </Typography>
                     </Box>
                 </Grid>
                 <Grid item xs={12}>
                     <Box sx={{ mx: 10 }}>
-                        <Typography variant='h6'>
-                            title
+                        <Typography variant='h6' sx={{ color: '#757575' }}>
+                            What did you learn about team or large project development? What will you start doing, keep doing, or stop doing next time?
                         </Typography>
-                        <Typography variant='subtitle2'>
-                            description
+                        <Typography variant='subtitle2' sx={{ color: '#757575' }}>
+                            Team or large project development often involves the time-consuming process of analyzing the strengths of team members, which can sometimes lead to delays in the development process. Moving forward, we recognize the importance of assigning tasks with realistic time expectations and deadlines to ensure the project stays on track.
+                            Additionally, we have begun implementing backup plans, recognizing their crucial role in managing unexpected delays and ensuring adequate time for team meetings to discuss project progress.
+                            To streamline our development process, we plan to stop allocating entire features to individual team members, as this often results in numerous merge conflicts and consumes significant time to resolve. Instead, we will focus on breaking down tasks into smaller, more manageable components, facilitating smoother collaboration and reducing the likelihood of conflicts arising.
+                        </Typography>
+                    </Box>
+                </Grid>
+                <Grid item xs={12}>
+                    <Box sx={{ mx: 10 }}>
+                        <Typography variant='h6' sx={{ color: '#757575' }}>
+                            What went right in the development process?
+                        </Typography>
+                        <Typography variant='subtitle2' sx={{ color: '#757575' }}>
+                            Several aspects of the development process went smoothly and contributed to the success of the project. 
+                            Firstly, the creation of an architecture diagram proved to be highly beneficial, 
+                            as it provided a clear overview of the system's structure and facilitated the seamless addition of additional functionality. 
+                            Additionally, leveraging appropriate design patterns at specific instances significantly aided the development process across all three iterations, 
+                            ensuring code maintainability and scalability. The utilization of design patterns learned in class, particularly those promoting low coupling, 
+                            enabled the easy incorporation of system tests during the third iteration,
+                            enhancing the overall robustness and quality of the application.
                         </Typography>
                     </Box>
                 </Grid>

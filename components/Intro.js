@@ -4,7 +4,6 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import { Button, Typography } from '@mui/material';
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
-import Link from 'next/link';
 
 export default function Intro() {
 
