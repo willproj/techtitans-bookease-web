@@ -76,7 +76,7 @@ const initNodes = [
         id: '5',
         type: 'custom',
         data: {
-            name: 'Asif', job: <ul>
+            name: 'Mahamud Hasan Asif', job: <ul>
                 <p>Developer</p>
                 <li>Integration Tests</li>
                 <li>Backend Development</li>
