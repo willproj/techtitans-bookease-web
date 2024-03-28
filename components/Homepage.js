@@ -22,7 +22,7 @@ function Homepage() {
             <Box id="feature" sx={{ height: '100vh', backgroundColor: '#7e57c2' }}>
                 <Features />
             </Box>
-            <Box id="postmortem" sx={{ height: '100vh' }}>
+            <Box id="devpostmortem" sx={{ height: '160vh' }}>
                 <Postmortem />
             </Box>
             <Box id="video" sx={{ height: '100vh', backgroundColor: '#7e57c2' }}>

@@ -1,6 +1,6 @@
 'use client'
 import React, { useCallback } from 'react';
-import ReactFlow, { useNodesState, useEdgesState, addEdge, MiniMap, Controls } from 'reactflow';
+import ReactFlow, { useNodesState, useEdgesState, addEdge, Background } from 'reactflow';
 import 'reactflow/dist/base.css';
 import CustomNode from './CustomNode';
 import Box from '@mui/material/Box';
@@ -41,7 +41,7 @@ const initNodes = [
             </ul>, emoji: '🤓'
         },
 
-        position: { x: -650, y: 300 },
+        position: { x: -350, y: 300 },
     },
     {
         id: '3',
@@ -55,7 +55,7 @@ const initNodes = [
                 <li>Connect Presentation, Logic and Persistence</li>
             </ul>, emoji: '🤩'
         },
-        position: { x: -200, y: 300 },
+        position: { x: -200, y: 600 },
     },
     {
         id: '4',
@@ -83,7 +83,7 @@ const initNodes = [
                 <li>Documentation</li>
             </ul>, emoji: '🤩'
         },
-        position: { x: 550, y: 300 },
+        position: { x: 350, y: 600 },
     },
 ];
 
@@ -153,7 +153,7 @@ export default function Team() {
                         Team
                     </Typography>
                 </Grid>
-                <Grid item xs={12} sx={{ mt: 1, mx: 10, height: '80vh' }}>
+                <Grid item xs={12} sx={{ mt: 1, mx: 40, height: '80vh' }}>
                     <ReactFlow
                         nodes={nodes}
                         edges={edges}
@@ -162,7 +162,9 @@ export default function Team() {
                         onConnect={onConnect}
                         nodeTypes={nodeTypes}
                         fitView
+                        nodesDraggable={false}
                     >
+                        <Background color="#aaa" gap={16} />
                     </ReactFlow>
                 </Grid>
             </Grid>

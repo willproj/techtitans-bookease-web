@@ -51,9 +51,9 @@ function Navbar() {
                         Features
                     </Typography>
                 </Button>
-                <Button sx={{ color: 'white', mx: 2 }} onClick={() => scrollToSection('postmortem')}>
+                <Button sx={{ color: 'white', mx: 2 }} onClick={() => scrollToSection('devpostmortem')}>
                     <Typography>
-                        Postmortem
+                        Dev Process & Postmortem
                     </Typography>
                 </Button>
                 <Button sx={{ color: 'white', mx: 2 }} onClick={() => scrollToSection('video')}>

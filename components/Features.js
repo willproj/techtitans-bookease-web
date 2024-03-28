@@ -28,13 +28,13 @@ function FeatureDescription({ title, description, pic, IconComp }) {
                     {description}
                 </Typography>
             </Grid>
-            <Grid item xs={6} sx={{ mt: 5 }}>
+            <Grid item xs={6} sx={{ mt: 3 }}>
                 <Box
                     sx={{
                         ml: 10,
                         position: 'relative',
-                        width: '300px',
-                        height: '420px',
+                        width: '340px',
+                        height: '470px',
                         display: 'inline-block',
                         backgroundImage: 'url(/pixel.png)',
                         backgroundSize: 'cover',
@@ -48,7 +48,7 @@ function FeatureDescription({ title, description, pic, IconComp }) {
                             position: 'absolute',
                             top: '50%',
                             left: '50%',
-                            width: 230,
+                            width: 260,
                             transform: 'translate(-50%, -50%)',
                         }}
                         alt="App Icon"
@@ -80,43 +80,43 @@ export default function Features() {
         {
             title: "Create Account",
             description: "Sign up quickly as a student or a professor.",
-            pic: "app.png",
+            pic: "create-account.png",
             IconComp: Filter1Icon
         },
         {
             title: "Search For Books",
             description: "Search for books with long name with only few letters!",
-            pic: "app.png",
+            pic: "search-book.png",
             IconComp: Filter2Icon
         },
         {
             title: "View Books Information",
             description: "Quickly view the books information and review.",
-            pic: "app.png",
+            pic: "view-bookinfo.png",
             IconComp: Filter3Icon
         },
         {
             title: "Ratings and Comments",
             description: "Not sure about the book? View ratings and comments from verified customers.",
-            pic: "app.png",
+            pic: "ratings-comments.png",
             IconComp: Filter4Icon
         },
         {
             title: "Favorite Book List",
             description: "Find a book that is interesting?. The application can save it for you to view and buy it later.",
-            pic: "app.png",
+            pic: "favourite-book.png",
             IconComp: Filter5Icon
         },
         {
             title: "Sell Preowned Books",
             description: "The customers can sell their used books. For the price they decide.",
-            pic: "app.png",
+            pic: "sell-book.png",
             IconComp: Filter6Icon
         },
         {
             title: "Buy Book",
             description: "Save all the books you like in a cart. Confirm the address when you checkout!",
-            pic: "app.png",
+            pic: "buy-book.png",
             IconComp: Filter7Icon
         },
     ]
