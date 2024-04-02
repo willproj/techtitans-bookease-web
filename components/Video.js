@@ -38,7 +38,7 @@ export default function Video() {
                 }}>
                     {isMounted && ( // Only render ReactPlayer if the component has mounted
                         <ReactPlayer
-                            url='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+                            url='https://www.youtube.com/watch?v=cPtyKJRjg8o'
                             width={'70%'}
                             height={'70vh'}
                         />
