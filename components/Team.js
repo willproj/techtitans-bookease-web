@@ -16,7 +16,7 @@ const initNodes = [
         id: '1',
         type: 'custom',
         data: {
-            name: 'Arrayman Pol',
+            name: 'Aaryaman Pol',
             job: <ul>
                 <p>Project Leader</p>
                 <li>3 tiered architecture design</li>
